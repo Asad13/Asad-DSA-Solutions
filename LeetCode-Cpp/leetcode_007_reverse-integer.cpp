@@ -31,6 +31,15 @@ Output: 21
 #include <climits>
 using namespace std;
 
+/*  
+  Time Complexity: O(log₁₀(n)) 
+  - The number of digits in x is log₁₀(n).
+  - The while loop processes each digit once, leading to O(log₁₀(n)) time complexity.
+
+  Space Complexity: O(1) 
+  - Only a few integer variables (x, r) are used.
+  - No additional data structures are required.
+*/
 int reverse(int x) {
   /* solution - Start */
 
