@@ -1,6 +1,7 @@
 /*
 # Problem Origin: Leetcode
 # Problem No: 9
+# Difficulty: Easy
 # Problem Link: https://leetcode.com/problems/palindrome-number/description/
 # Problem Decription:
 Given an integer x, return true if x is a palindrome, and false otherwise.
@@ -20,7 +21,8 @@ Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-Constraints: -231 <= x <= 231 - 1
+Constraints:
+  1. -231 <= x <= 231 - 1
  
 Follow up: Could you solve it without converting the integer to a string?
 
@@ -78,7 +80,6 @@ bool isPalindromeByString(int x) {
   - Only a few integer variables (x, rev) are used.
   - No additional data structures are required.
 */
-
 bool isPalindrome(int x) {
   /* solution - Start */
 
