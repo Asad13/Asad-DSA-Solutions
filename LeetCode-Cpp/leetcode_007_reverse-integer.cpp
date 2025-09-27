@@ -1,6 +1,7 @@
 /*
 # Problem Origin: Leetcode
 # Problem No: 7
+# Difficulty: Easy
 # Problem Link: https://leetcode.com/problems/reverse-integer/description/
 # Problem Decription:
 Given a signed 32-bit integer x, return x with its digits reversed.
