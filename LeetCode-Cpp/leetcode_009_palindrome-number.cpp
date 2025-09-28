@@ -1,5 +1,6 @@
 /*
 # Problem Origin: Leetcode
+# Problem Name: Palindrome Number
 # Problem No: 9
 # Difficulty: Easy
 # Problem Link: https://leetcode.com/problems/palindrome-number/description/
@@ -31,12 +32,14 @@ Follow up: Could you solve it without converting the integer to a string?
  2. No need to specify namespace
  3. No need to write the main function or input or output any value
  4. Only need to write the solution within the function provided. (Here between "solution - Start" and "solution - End")
+
+# ***** Best Solution *****: Under the comment "Main Solution"
 */
 #include<iostream>
 using namespace std;
 
 /*  
-  Secondary Solution Using String
+  SOLUTION 1: Secondary Solution Using String
   Time Complexity: O(n) 
   - Converting an integer to a string takes O(n), where n is the number of digits.
   - The for loop runs for n/2 iterations, which is O(n).
@@ -69,9 +72,9 @@ bool isPalindromeByString(int x) {
   /* solution - End */
 }
 
-
+/* ------------------------ Main Solution ------------------------ */
 /*  
-  Optimized Solution Using Half Reversal
+  SOLUTION 2: Optimized Solution Using Half Reversal
   Time Complexity: O(log₁₀(n)) 
   - We reduce x by a factor of 10 in each iteration.
   - The number of digits in x is log₁₀(n), so the loop runs O(log₁₀(n)) times.
