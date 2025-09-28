@@ -1,5 +1,6 @@
 /*
 # Problem Origin: Leetcode
+# Problem Name: Reverse Integer
 # Problem No: 7
 # Difficulty: Easy
 # Problem Link: https://leetcode.com/problems/reverse-integer/description/
@@ -27,11 +28,14 @@ Output: 21
  2. No need to specify namespace
  3. No need to write the main function or input or output any value
  4. Only need to write the solution within the function provided. (Here between "solution - Start" and "solution - End")
+
+# ***** Best Solution *****: Under the comment "Main Solution"
 */
 #include<iostream>
 #include <climits>
 using namespace std;
 
+/* ------------------------ Main Solution ------------------------ */
 /*  
   Time Complexity: O(log₁₀(n)) 
   - The number of digits in x is log₁₀(n).

@@ -1,5 +1,6 @@
 /*
 # Problem Origin: Leetcode
+# Problem Name: Valid Palindrome
 # Problem No: 125
 # Difficulty: Medium
 # Problem Link: https://leetcode.com/problems/valid-palindrome/description/
@@ -29,20 +30,21 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 Constraints:
   1. 1 <= s.length <= 2 * 105
   2. s consists only of printable ASCII characters.
- 
-Follow up: Could you solve it without converting the integer to a string?
 
 # Note For LeetCode:
  1. You don't need to import any library. For example, "#include<iostream>" is not needed
  2. No need to specify namespace
  3. No need to write the main function or input or output any value
  4. Only need to write the solution within the function provided. (Here between "solution - Start" and "solution - End")
+
+# ***** Best Solution *****: Under the comment "Main Solution"
 */
 #include<iostream>
 #include <cctype> // needed only for static_cast<unsigned char>(To avoid undefined behaviour for negative char values)
 using namespace std;
 
 /*
+  SOLUTION 1: With static_cast<unsigned char> to avoid undefined behaviour for negative char values
   Time Complexity: O(n) 
   - Each character is visited at most once from either end.
   - Operations inside the loop (isalnum, tolower, comparisons) are O(1).
@@ -95,7 +97,9 @@ bool isPalindromeWithStaticCast(string s) {
   /* solution - End */
 }
 
+/* ------------------------ Main Solution ------------------------ */
 /*
+  SOLUTION 2: Optimal Solution
   Time Complexity: O(n) 
   - Each character is visited at most once from either end.
   - Operations inside the loop (isalnum, tolower, comparisons) are O(1).
